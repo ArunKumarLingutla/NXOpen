@@ -1,0 +1,17 @@
+﻿  Source.cpp
+C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\Header.hpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Source.cpp')
+  
+C:\Program Files\Siemens\NX 12.0\UGOPEN\NXOpen\NXException.hxx(26,53): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'NXOpen::NXException'
+  (compiling source file 'Source.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vcruntime_exception.h(49,24):
+      see declaration of 'std::exception'
+      C:\Program Files\Siemens\NX 12.0\UGOPEN\NXOpen\NXException.hxx(26,27):
+      see declaration of 'NXOpen::NXException'
+  
+C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\Header.hpp(395,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Source.cpp')
+  
+C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\Source.cpp(61,29): warning C4566: character represented by universal-character-name '\u2192' cannot be represented in the current code page (1252)
+C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\Source.cpp(65,27): warning C4101: 'ex': unreferenced local variable
+  NXOpenGetPartsCPP.vcxproj -> C:\Users\arunk\source\repos\NXOpenGetPartsCPP\x64\Debug\NXOpenGetPartsCPP.dll

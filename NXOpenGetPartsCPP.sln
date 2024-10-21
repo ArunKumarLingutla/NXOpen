@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NXOpenGetPartsCPP", "NXOpenGetPartsCPP\NXOpenGetPartsCPP.vcxproj", "{19649A70-4186-4BF0-926F-552138886AFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19649A70-4186-4BF0-926F-552138886AFF}.Debug|x64.ActiveCfg = Debug|x64
+		{19649A70-4186-4BF0-926F-552138886AFF}.Debug|x64.Build.0 = Debug|x64
+		{19649A70-4186-4BF0-926F-552138886AFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{19649A70-4186-4BF0-926F-552138886AFF}.Debug|x86.Build.0 = Debug|Win32
+		{19649A70-4186-4BF0-926F-552138886AFF}.Release|x64.ActiveCfg = Release|x64
+		{19649A70-4186-4BF0-926F-552138886AFF}.Release|x64.Build.0 = Release|x64
+		{19649A70-4186-4BF0-926F-552138886AFF}.Release|x86.ActiveCfg = Release|Win32
+		{19649A70-4186-4BF0-926F-552138886AFF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08D6ADE9-3237-4778-A8CA-C89BE1D203B2}
+	EndGlobalSection
+EndGlobal
