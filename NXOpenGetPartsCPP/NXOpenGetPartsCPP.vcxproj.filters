@@ -15,15 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="GettingPartsAndBodies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ufusr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CreateLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.hpp">
+    <ClInclude Include="NXOpenHeaders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StandardFuncs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MethodsAndGlobals.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

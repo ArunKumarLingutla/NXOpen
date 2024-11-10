@@ -130,11 +130,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="CreateLine.cpp" />
+    <ClCompile Include="GettingPartsAndBodies.cpp" />
     <ClCompile Include="ufusr.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.hpp" />
+    <ClInclude Include="MethodsAndGlobals.hpp" />
+    <ClInclude Include="NXOpenHeaders.hpp" />
+    <ClInclude Include="StandardFuncs.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
