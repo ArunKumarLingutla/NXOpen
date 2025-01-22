@@ -1,12 +1,27 @@
-﻿  ufusr.cpp
+﻿  GettingPartsAndBodies.cpp
 C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\NXOpenHeaders.hpp(17,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'ufusr.cpp')
+  (compiling source file 'GettingPartsAndBodies.cpp')
   
 C:\Program Files\Siemens\NX 12.0\UGOPEN\NXOpen\NXException.hxx(26,53): warning C4275: non dll-interface class 'std::exception' used as base for dll-interface class 'NXOpen::NXException'
-  (compiling source file 'ufusr.cpp')
+  (compiling source file 'GettingPartsAndBodies.cpp')
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vcruntime_exception.h(49,24):
       see declaration of 'std::exception'
       C:\Program Files\Siemens\NX 12.0\UGOPEN\NXOpen\NXException.hxx(26,27):
       see declaration of 'NXOpen::NXException'
   
-  NXOpenGetPartsCPP.vcxproj -> C:\Users\arunk\source\repos\NXOpenGetPartsCPP\x64\Debug\NXOpenGetPartsCPP.dll
+C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\GettingPartsAndBodies.cpp(150,65): error C2665: 'NXOpen::DirectionCollection::CreateDirection': no overloaded function could convert all the argument types
+      C:\Program Files\Siemens\NX 12.0\UGOPEN\NXOpen\DirectionCollection.hxx(398,37):
+      could be 'NXOpen::Direction *NXOpen::DirectionCollection::CreateDirection(NXOpen::Direction *,NXOpen::SmartObject::UpdateOption)'
+          C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\GettingPartsAndBodies.cpp(150,65):
+          'NXOpen::Direction *NXOpen::DirectionCollection::CreateDirection(NXOpen::Direction *,NXOpen::SmartObject::UpdateOption)': cannot convert argument 1 from 'NXOpen::Direction' to 'NXOpen::Direction *'
+              C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\GettingPartsAndBodies.cpp(150,81):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Siemens\NX 12.0\UGOPEN\NXOpen\DirectionCollection.hxx(378,37):
+      or       'NXOpen::Direction *NXOpen::DirectionCollection::CreateDirection(NXOpen::Point *,const NXOpen::Vector3d &)'
+          C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\GettingPartsAndBodies.cpp(150,65):
+          'NXOpen::Direction *NXOpen::DirectionCollection::CreateDirection(NXOpen::Point *,const NXOpen::Vector3d &)': cannot convert argument 1 from 'NXOpen::Direction' to 'NXOpen::Point *'
+              C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\GettingPartsAndBodies.cpp(150,81):
+              No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Users\arunk\source\repos\NXOpenGetPartsCPP\NXOpenGetPartsCPP\GettingPartsAndBodies.cpp(150,65):
+      while trying to match the argument list '(NXOpen::Direction, NXOpen::SmartObject::UpdateOption)'
+  

@@ -134,6 +134,60 @@ void GetFaces() { //getting errors have to fix**********************************
 	listingWindow->Open();
 	listingWindow->WriteLine(to_string(lsFaces.size()).c_str());
 }
+static std::pair<double, double> GetMinMaxDistance(
+	NXOpen::DisplayableObject* obj1,
+	NXOpen::DisplayableObject* obj2,
+	NXOpen::Direction direction)
+{
+	try
+	{
+		// Get the Session and Work Part
+		NXOpen::Session* theSession = NXOpen::Session::GetSession();
+		NXOpen::Part* workPart = theSession->Parts()->Work();
+		NXOpen::MeasureManager* measureManager = workPart->MeasureManager();
+
+		// Create a Direction object
+		NXOpen::Direction* measureDirection = workPart->Directions()->CreateDirection(direction,SmartObject::UpdateOption::UpdateOptionWithinModeling);
+
+		// Get the unit for measurement (default unit of the part)
+		NXOpen::Unit* distanceUnit = workPart->UnitCollection()->FindObject("MilliMeter"); // Replace with "Meter" or other units if required
+
+		// Measure minimum distance
+		NXOpen::MeasureDistance* minMeasure = measureManager->NewDistance(
+			distanceUnit,               // Unit
+			obj1,                       // First object
+			obj2,                       // Second object
+			measureDirection,           // Direction
+			NXOpen::MeasureManager::ProjectionTypeMinimum); // Minimum distance projection
+		double minDistance = minMeasure->Value();
+		delete minMeasure;
+
+		// Measure maximum distance
+		NXOpen::MeasureDistance* maxMeasure = measureManager->NewDistance(
+			distanceUnit,               // Unit
+			obj1,                       // First object
+			obj2,                       // Second object
+			measureDirection,           // Direction
+			NXOpen::MeasureManager::ProjectionTypeMaximum); // Maximum distance projection
+		double maxDistance = maxMeasure->Value();
+		delete maxMeasure;
+
+		// Clean up
+		delete measureDirection;
+
+		return { minDistance, maxDistance };
+	}
+	catch (const NXOpen::NXException& ex)
+	{
+		std::cerr << "NX Exception: " << ex.Message() << std::endl;
+		return { 0.0, 0.0 };
+	}
+	catch (...)
+	{
+		std::cerr << "An unexpected error occurred." << std::endl;
+		return { 0.0, 0.0 };
+	}
+}
 //libufun_cae.lib;libnxopencpp_annotations.lib;libnxopencpp_assemblies.lib;libnxopencpp_bodydes.lib;
 // libnxopencpp_cae.lib;libnxopencpp_cam.lib;libnxopencpp_die.lib;libnxopencpp_display.lib;libnxopencpp_drafting.lib;
 // libnxopencpp_drawings.lib;libnxopencpp_facet.lib;libnxopencpp_features.lib;libnxopencpp_fields.lib;
